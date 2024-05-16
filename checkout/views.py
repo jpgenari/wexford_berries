@@ -51,6 +51,7 @@ def checkout(request):
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
+    
     else:
         bag = request.session.get('bag', {})
         if not bag:
@@ -65,7 +66,7 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        
+            
         order_form = OrderForm()
     
     if not stripe_public_key:
