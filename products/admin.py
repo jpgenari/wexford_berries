@@ -11,7 +11,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
-    
+
     ordering = ('sku',)
 
 admin.site.register(Product, ProductAdmin)
