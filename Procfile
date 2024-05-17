@@ -1,0 +1,1 @@
+web: gunicorn wexford_berries.wsgi:application
