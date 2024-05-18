@@ -1,0 +1,4 @@
+User-user: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://wexford-berries-229479cc7505.herokuapp.com/sitemap.xml
