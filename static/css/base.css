@@ -276,17 +276,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* Increase padding-top when screen width is equal to or less than 1075px */
-@media (max-width: 1075px) and (min-width: 992px) {
-    .header-container {
-        padding-top: 194px;
-    }
-
-    body {
-        height: calc(100vh - 194px);
-    }
-}
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -311,26 +300,40 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
-}
 
-/* Increase padding-top when screen width is 485px or less */
-@media (max-width: 485px) {
-    .header-container {
-        padding-top: 150px;
+    .display-4.logo-font.text-green {
+        font-size: 2rem;
     }
 
-    body {
-        height: calc(100vh - 194px);
+    .nav-link {
+        padding: 0.15rem;
     }
-}
 
-/* Reduce space between icons when screen width is 390px or less */
-@media (max-width: 390px) {
-    .nav-link.d-block.d-lg-none {
-        /* Your custom styles here */
-        display: inline-block; /* Change the display property as needed */
-        margin-right: 1px; /* Adjust the margin as needed */
-        font-size: 14px; /* Adjust the font size as needed */
-        /* Add more custom styles as needed */
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-green.rounded-0,
+    .btn.btn-green.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-green.rounded-0.btn-lg,
+    .btn.btn-green.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
