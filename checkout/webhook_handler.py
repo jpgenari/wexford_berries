@@ -26,7 +26,7 @@ class StripeWH_Handler:
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
         
-        send_email(
+        send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
@@ -49,11 +49,11 @@ class StripeWH_Handler:
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
-        
+    
         print(intent)
+        
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(intent.latest_charge)
-
         billing_details = stripe_charge.billing_details # updated
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2) # updated
