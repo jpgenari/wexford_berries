@@ -26,7 +26,7 @@
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black">
+                            <thead class="text-green">
                                 <tr>
                                     <th scope="col">Berries in your bag</th>
                                     <th scope="col"></th>
@@ -58,7 +58,7 @@
                                             <div class="form-group">
                                                 <div class="input-group input-group-{{ item.item_id }}">
                                                     <div class="input-group-prepend">
-                                                        <button class="decrement-qty btn btn-sm btn-black rounded-0 decrement-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
+                                                        <button class="decrement-qty btn btn-sm btn-green rounded-0 decrement-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
                                                             <span>
                                                                 <i class="fas fa-minus fa-sm"></i>
                                                             </span>
@@ -66,7 +66,7 @@
                                                     </div>
                                                     <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
                                                     <div class="input-group-append">
-                                                        <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
+                                                        <button class="increment-qty btn btn-sm btn-green rounded-0 increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}">
                                                             <span>
                                                                 <i class="fas fa-plus fa-sm"></i>
                                                             </span>
@@ -97,13 +97,13 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <a href="{% url 'products' %}" class="btn btn-outline-green rounded-0 btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                                    <a href="{% url 'checkout' %}" class="btn btn-green rounded-0 btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
@@ -115,7 +115,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'products' %}" class="btn btn-outline-green rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
