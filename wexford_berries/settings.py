@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['wexford-berries.herokuapp.com', 'wexford-berries-229479cc7505.herokuapp.com', 'localhost']
 
@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['wexford-berries.herokuapp.com', 'wexford-berries-229479cc7505.
 # before final deployment
 # SECRET_KEY = 'django-insecure-qac$i6dux4oaixn^3o)m94slbvf44=b2yu_hc!l4=a8tn9gkw8'
 
-# DEBUG = True
+DEBUG = True
 
 # ALLOWED_HOSTS = []
 
