@@ -29,6 +29,13 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['wexford-berries.herokuapp.com', 'wexford-berries-229479cc7505.herokuapp.com', 'localhost']
 
+# secret key, debug true and allowed host for local building only - to be removed
+# before final deployment
+# SECRET_KEY = 'django-insecure-qac$i6dux4oaixn^3o)m94slbvf44=b2yu_hc!l4=a8tn9gkw8'
+
+# DEBUG = True
+
+# ALLOWED_HOSTS = []
 
 # Application definition
 

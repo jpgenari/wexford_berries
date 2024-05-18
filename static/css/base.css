@@ -3,12 +3,26 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    position: relative;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    margin: 0; /* Ensure there's no default margin */
 }
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/media/homepage_background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.2; /* Adjust the opacity here */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
 
 /* from Bulma */
 .icon {
@@ -21,6 +35,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    /* font-weight: bold; */
 }
 
 .main-logo-link {
@@ -28,49 +43,49 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #0b542f;
     color: white;
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
+.btn-green {
+    background: #0b542f;
     color: white;
 }
 
-.btn-outline-black {
+.btn-outline-green {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    color: #0b542f !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #0b542f;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
+.btn-outline-green:hover,
+.btn-outline-green:active,
+.btn-outline-green:focus {
+    background: #0b542f;
     color: white !important;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
     background: #222;
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
+.text-green {
+    color: #0b542f !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.border-green {
+    border: 1px solid #0b542f !important;
 }
 
-.bg-black {
-    background-color: #000 !important;
+.bg-green {
+    background-color: #0b542f !important;
 }
 
 .overlay {
@@ -125,7 +140,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #0b542f;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -187,7 +202,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #0b542f;
     border-radius: 0;
 }
 
@@ -211,8 +226,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #0b542f;
+    border: 1px solid #0b542f;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -261,6 +276,16 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* Increase padding-top when screen width is equal to or less than 1075px */
+@media (max-width: 1075px) and (min-width: 992px) {
+    .header-container {
+        padding-top: 194px;
+    }
+
+    body {
+        height: calc(100vh - 194px);
+    }
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -285,5 +310,27 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+}
+
+/* Increase padding-top when screen width is 485px or less */
+@media (max-width: 485px) {
+    .header-container {
+        padding-top: 150px;
+    }
+
+    body {
+        height: calc(100vh - 194px);
+    }
+}
+
+/* Reduce space between icons when screen width is 390px or less */
+@media (max-width: 390px) {
+    .nav-link.d-block.d-lg-none {
+        /* Your custom styles here */
+        display: inline-block; /* Change the display property as needed */
+        margin-right: 1px; /* Adjust the margin as needed */
+        font-size: 14px; /* Adjust the font size as needed */
+        /* Add more custom styles as needed */
     }
 }
