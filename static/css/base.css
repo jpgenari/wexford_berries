@@ -6,7 +6,7 @@ body {
     background: url('/media/homepage_background.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: white;
+    color: #555;
     font-family: 'Lato';
 }
 
@@ -164,6 +164,12 @@ input[name='q']::placeholder {
 
 .arrow-dark {
     border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .bag-notification-wrapper {
