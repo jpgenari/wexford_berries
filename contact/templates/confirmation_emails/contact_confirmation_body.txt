@@ -1,0 +1,17 @@
+Hello {{ email }}!
+
+This is a confirmation your message below has been received:
+
+Name: {{ name }}
+Subject: {{ subject }}
+Order Number: {{ order_number }}
+Received on: {{ order.date }}
+Message: {{ message }}
+
+A member of our team will reply to your message as soon as possible through this email.
+
+Thank you for contacting us!
+
+Sincerely,
+
+Wexford Berries

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 mt-3">
+                <hr>
+                <h2 class="logo-font text-center mb-4">Contact Us</h2>
+                <hr>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div>
+                        <button class="btn btn-green rounded-0 text-uppercase float-left mb-2" type="submit">Send</button>
+                        <span class="small float-right">* required</span>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+{% endblock %}
