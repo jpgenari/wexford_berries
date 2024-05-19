@@ -2,6 +2,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.conf import settings
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Contact
 from .forms import ContactForm
 
@@ -31,6 +32,8 @@ def contact_view(request):
             
             print(email)
             
+            request.session['email'] = contact.email
+            
             return redirect('success_view')
     else:
         form = ContactForm()
@@ -38,4 +41,5 @@ def contact_view(request):
     return render(request, 'contact.html', {'form': form})
 
 def success_view(request):
-    return render(request, 'contact_success.html')
+    email = request.session.get('email', '')
+    return render(request, 'contact_success.html', {'email': email})
