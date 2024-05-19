@@ -15,7 +15,7 @@ def view_wishlist(request):
     user = UserProfile.objects.get(user=request.user)
     wishlist_items = Wishlist.objects.filter(user=user)
     
-    return render(request, "wishlist.html", {"wishlist_items": wishlist_items})
+    return render(request, "wishlist/wishlist.html", {"wishlist_items": wishlist_items})
 
 
 def add_and_delete_to_wishlist(request, item_id):

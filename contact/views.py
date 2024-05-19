@@ -13,8 +13,8 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             contact = form.save()
-            subject = render_to_string('confirmation_emails/contact_confirmation_subject.txt', {'email': contact.email})
-            body = render_to_string('confirmation_emails/contact_confirmation_body.txt', {
+            subject = render_to_string('contact/confirmation_emails/contact_confirmation_subject.txt', {'email': contact.email})
+            body = render_to_string('contact/confirmation_emails/contact_confirmation_body.txt', {
                 'email': contact.email,
                 'name': contact.name,
                 'subject': contact.subject,
@@ -38,8 +38,8 @@ def contact_view(request):
     else:
         form = ContactForm()
     
-    return render(request, 'contact.html', {'form': form})
+    return render(request, 'contact/contact.html', {'form': form})
 
 def success_view(request):
     email = request.session.get('email', '')
-    return render(request, 'contact_success.html', {'email': email})
+    return render(request, 'contact/contact_success.html', {'email': email})
