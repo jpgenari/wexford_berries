@@ -6,6 +6,8 @@ from django.db.models.functions import Lower
 
 from .models import Product
 from .forms import ProductForm
+from wishlist.models import Wishlist
+from profiles.models import UserProfile
 
 # Create your views here.
 
@@ -55,8 +57,14 @@ def product_detail(request, product_id):
     
     product = get_object_or_404(Product, pk=product_id)
     
+    in_wishlist = False
+    if request.user.is_authenticated:
+        user = UserProfile.objects.get(user=request.user)
+        in_wishlist = Wishlist.objects.filter(user=user, product=product).exists()
+    
     context = {
         'product': product,
+        'in_wishlist': in_wishlist,
     }
     
     return render(request, 'products/product_detail.html', context)

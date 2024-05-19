@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font text-center custom-margin">My Berries Wishlist</h2>
+            <h2 class="logo-font text-center custom-margin">My Wishlist</h2>
             <hr class="w-50 mb-1">
         </div>
     </div>
@@ -24,8 +24,8 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex">
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
-                            <span class="small"><a href="{% url 'products' %}"> Add more Berries</a> | </span>
-                            <strong>{{ wishlist_items|length }}</strong> products in your wishlist list
+                            <span class="small"><a href="{% url 'products' %}"> All products</a> | </span>
+                            <strong>{{ wishlist_items|length }}</strong> Products in my wishlist
                         </p>
                     </div>
                 </div>
@@ -55,9 +55,9 @@
                                         {% else %}
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
-                                        {% if request.user.is_superuser %}
-                                            
-                                        {% endif %}
+                                        <small class="ml-3">
+                                            <a href="{% url 'delete_from_wishlist' item.product.id %}" class="text-danger">Remove</a>
+                                        </small>
                                     </div>
                                 </div>
                             </div>

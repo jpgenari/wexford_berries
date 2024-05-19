@@ -35,6 +35,23 @@
                 {% else %}
                     <small class="text-muted">No Rating</small>
                 {% endif %}
+                {% if user.is_authenticated %}
+                    <div class="my-2">
+                        {% if in_wishlist %}
+                            <a href="{% url 'add_and_delete_to_wishlist' product.id %}" class="small link p-2 text-danger" data-product-id="{{ product.id }}">
+                                <i class="fas fa-heart mx-2"></i>Remove from Wishlist
+                            </a>
+                        {% else %}
+                            <a href="{% url 'add_and_delete_to_wishlist' product.id %}" class="small link p-2" data-product-id="{{ product.id }}">
+                                <i class="fas fa-heart mx-2"></i>Add to Wishlist
+                            </a>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <a href="{% url 'add_and_delete_to_wishlist' product.id %}" class="small link p-2" data-product-id="{{ product.id }}">
+                        <i class="fas fa-heart mx-2"></i>Add to Wishlist
+                    </a>
+                {% endif %}
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
                         <a href="{% url 'edit_product' product.id %}">Edit</a>
