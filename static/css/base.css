@@ -3,24 +3,11 @@ html {
 }
 
 body {
-    position: relative;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
-    margin: 0; /* Ensure there's no default margin */
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/media/homepage_background2.jpg') no-repeat center center fixed;
+    background: url('/media/homepage_background.png') no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.2; /* Adjust the opacity here */
-    z-index: -1; /* Ensure it stays behind the content */
+    height: calc(100vh - 164px);
+    color: white;
+    font-family: 'Lato';
 }
 
 
@@ -303,6 +290,7 @@ input[name='q']::placeholder {
 
     .display-4.logo-font.text-green {
         font-size: 2rem;
+        font-weight: bold;
     }
 
     .nav-link {
