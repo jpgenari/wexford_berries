@@ -5,7 +5,6 @@ from . models import AboutPage
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'title',
         'content',
         'last_updated',
         'author',

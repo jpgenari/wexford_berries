@@ -30,7 +30,7 @@ urlpatterns = [
     path("wishlist/", include("wishlist.urls")),
     path("contact/", include("contact.urls")),
     path("about/", include("about.urls")),
-    path('summernote/', include('django_summernote.urls')),
+    path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'wexford_berries.views.handler404'

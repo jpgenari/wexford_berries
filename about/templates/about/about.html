@@ -13,15 +13,19 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6 mt-3">
-                <h1>{{ about_page.title }}</h1>
+            <div class="col-12 col-md-6">
+                <hr>
+                <h2 class="logo-font mb-4">About Us</h2>
                 <p>{{ about_page.content|safe }}</p>
+                <hr>
+                {% if request.user.is_superuser %}
+                <div class="text-right">
+                    <small class="ml-3">
+                        <a href="{% url 'edit_about' %}" >Edit</a>
+                    </small>
+                </div>
+                {% endif %}
             </div>
-            {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a href="{% url 'edit_about' %}">Edit</a>
-                </small>
-            {% endif %}
         </div>
     </div>
 {% endblock %}
