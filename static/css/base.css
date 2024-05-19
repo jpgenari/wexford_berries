@@ -10,6 +10,10 @@ body {
     font-family: 'Lato';
 }
 
+footer {
+    max-height: 200px;
+}
+
 
 /* from Bulma */
 .icon {
@@ -172,12 +176,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -329,5 +327,9 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    footer {
+        max-height: 116px;
     }
 }
