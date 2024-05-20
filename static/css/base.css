@@ -7,13 +7,14 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
+    /* padding-bottom: 280px; */
     font-family: 'Lato';
 }
 
-footer {
-    max-height: 200px;
+footer .container {
+    max-height: auto;
+    max-width: 100% !important;
 }
-
 
 /* from Bulma */
 .icon {
@@ -176,6 +177,56 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Footer */
+
+footer h2 {
+    font-size: 2rem;
+}
+
+footer h6 {
+    font-size: 1rem;
+    margin-bottom: .4rem !important;
+}
+
+footer p {
+    font-size: .8rem;
+    margin-bottom: .2rem !important;
+}
+
+/*Mailchimp*/
+.mc-field-group input {
+    width: 400px;
+    resize: horizontal !important;
+}
+
+.mc-field-group,
+#mce-responses,
+#mc-embedded-subscribe {
+    padding: 1px;
+    margin: 1px;
+}
+
+#mc_embed_signup form {
+    margin: 1px !important;
+}
+
+#mc-embedded-subscribe {
+    margin: 1.75em 0 0em 5% !important;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 100% !important;
+}
+
+#mc_embed_signup .mc-field-group label {
+    font-size: .7rem;
+}
+
+#mc_embed_signup .mc-field-group input {
+    padding: 0 !important;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -292,7 +343,7 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-green {
+    .display-4.logo-font.text-green, {
         font-size: 2rem;
         font-weight: bold;
     }
@@ -329,7 +380,36 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 
-    footer {
-        max-height: 116px;
+    #about-size-mobile{
+        font-size: 2rem;
+    }
+
+    footer h2 {
+        font-size: 1rem;
+    }
+
+    footer h6 {
+        margin-bottom: .4rem !important;
+    }
+
+    footer p {
+        font-size: .8rem;
+        margin-bottom: .2rem !important;
+    }
+
+    #mc_embed_signup form {
+        margin: 0;
+    }
+
+    #mc_embed_signup .mc-field-group label {
+        font-size: .5rem;
+    }
+
+    #mc_embed_signup input {
+        font-size: .7rem;
+    }
+
+    #mc-embedded-subscribe {
+        margin: 1.55rem 0 0rem 5% !important;
     }
 }
