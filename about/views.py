@@ -14,6 +14,9 @@ def about(request):
 @login_required
 def edit_about(request):
     """Allows front end to edit data stored in the database"""
+    if not request.user.is_superuser:
+        return redirect('about')
+
     about_page = get_object_or_404(AboutPage, pk=1)
     if request.method == "POST":
         form = AboutPageForm(request.POST, instance=about_page)
