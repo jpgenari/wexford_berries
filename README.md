@@ -4,6 +4,68 @@ Wexford Berries is a leading B2C e-commerce platform, offering a wide selection 
 
 Link to the live web app: [Wexford | Berries](https://wexford-berries-229479cc7505.herokuapp.com/)
 
+## Features
+
+### Home
+
+ - Anonymous
+![homepage-anonymous](/documentation/features/home.png)
+
+- Logged
+![homepage-superuser](/documentation/features/home_authorised_user.png)
+
+### Products
+
+ - Anonymous
+![products-anonymous](/documentation/features/products.png)
+
+- Logged
+![products-superuser](/documentation/features/product_authorised_user.png)
+
+### Products
+ 
+ - Anonymous
+![products-anonymous](/documentation/features/products.png)
+
+- Logged
+![products-superuser](/documentation/features/product_authorised_user.png)
+
+### Product Details
+
+ - Anonymous
+![product-details-anonymous](/documentation/features/product_detail.png)
+
+- Superuser
+![product-superuser](/documentation/features/product_detail_superuser.png)
+
+### Wishlist
+
+- Logged
+![wishlist-logged](/documentation/features/wishlist_logged.png)
+
+### Bag
+
+- Logged
+![bag-logged](/documentation/features/bag_logged.png)
+
+### Checkout
+
+- Logged
+![checkout-logged](/documentation/features/checkout_logged.png)
+
+### Contact
+
+- Logged
+![contact-logged](/documentation/features/contact_superuser.png)
+
+### About
+
+- Anonymous
+![about-anonymous](/documentation/features/about.png)
+
+- Superuser
+![about-superuser](/documentation/features/about_superuser.png)
+
 ## User Stories and Agile
 
 ### User Stories
@@ -128,6 +190,8 @@ About page|store owner|update 'About Us' page from when logged in as admin|pass
 
 ### Acknowledgement
 
-- A special thanks to my mentor, [Chris Quin](https://github.com/10xOXR), for his outstanding support and patience during the development process. Chris, your encouragement kept me going, and your guidance was crucial to the project's success. I appreciate your unwavering commitment and expertise.
+ - A special thanks to my cohort, Amy Richardson, for her outstanding support and patience. Support for not keep pushing me and patience when I was complaining at 23:30 or even later.
 
- - A big thank you to my wife, Ana, for her unwavering support and understanding. She, along with Chris, has been instrumental in keeping me motivated and preventing me from giving up, despite the long hours spent coding. Grateful for her constant presence and encouragement.
+ - A big thank you to Bruna Andelieri a friend I made throughout this corse and has been helping immensely - and extend my gratitude to her partner Ivan, how also help me.
+
+ - A sincere appreciation to my wife, Ana, for her unwavering support and understanding. She didn't let me give up, even during the most challenging moments of coding. I'm deeply grateful for her constant presence and encouragement.
