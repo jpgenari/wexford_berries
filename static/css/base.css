@@ -12,7 +12,6 @@ body {
 }
 
 footer .container {
-    max-height: auto;
     max-width: 100% !important;
 }
 
@@ -371,7 +370,7 @@ footer p {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-green, {
+    .display-4.logo-font.text-green {
         font-size: 2rem;
         font-weight: bold;
     }
