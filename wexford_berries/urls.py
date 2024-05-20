@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404
+from .views import handler404, handler500
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,8 +31,10 @@ urlpatterns = [
     path("wishlist/", include("wishlist.urls")),
     path("contact/", include("contact.urls")),
     path("about/", include("about.urls")),
+    path('policies/privacy/', views.privacy_policy, name='privacy_policy'),
+    
     path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'wexford_berries.views.handler404'
-
+handler500 = 'wexford_berries.views.handler500'
