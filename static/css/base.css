@@ -242,6 +242,10 @@ footer p {
     padding: 0 !important;
 }
 
+#mc_embed_signup #mce-success-response {
+    color: white
+}
+
 /* -------------------------------- Animations */
 
 @-webkit-keyframes freeDelivery {  
