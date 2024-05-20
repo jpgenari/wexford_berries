@@ -1,8 +1,8 @@
 from django.db import models
 
-# Create your models here.
 
 class Contact(models.Model):
+    """Represents each message received and saved on the database"""
     name = models.CharField(max_length=200, blank=True)
     email = models.EmailField()
     subject = models.CharField(max_length=200)

@@ -44,8 +44,8 @@
     <body>
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left" >
+                    <a href="{% url 'home' %}" class="nav-link main-logo-link" aria-label="Go to home page by clicking on logo">
                         <h2 class="logo-font my-0">
                             <strong class="text-red">Wexford</strong>
                             <span class="text-green">| Berries</span>
@@ -57,7 +57,7 @@
                         <div class="input-group w-100">
                             <input class="form-control border border-green rounded-0" type="text" name="q" placeholder="Search our berries shop">
                             <div class="input-group-append">
-                                <button class="form-control btn btn-green border border-green rounded-0" type="submit">
+                                <button class="form-control btn btn-green border border-green rounded-0" type="submit" aria-label="Submit search">
                                     <span class="icon">
                                         <i class="fas fa-search"></i>
                                     </span>
@@ -69,7 +69,7 @@
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                         <li class="list-inline-item dropdown">
-                            <a class="text-green nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="text-green nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
                                 <div class="text-center">
                                     <div><i class="fas fa-user fa-lg"></i></div>
                                     <p class="my-0">My Account</p>
@@ -78,18 +78,18 @@
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                        <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="Open product management page">Product Management</a>
                                     {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                    <a href="{% url 'profile' %}" class="dropdown-item" aria-label="Go to user profile">My Profile</a>
+                                    <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="Directs to logout page">Logout</a>
                                 {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    <a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="Directs to sign up/register page">Register</a>
+                                    <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="Directs to login page">Login</a>
                                 {% endif %}
                             </div>
                         </li>
                         <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-green{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-green{% endif %} nav-link" href="{% url 'view_bag' %}" aria-label="Goes to the products bag view">
                                 <div class="text-center">
                                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                     <p class="my-0">
@@ -224,19 +224,19 @@
                                         Useful links
                                     </h6>
                                     <p>
-                                        <a href="{% url 'home' %}" class="text-reset">Home</a>
+                                        <a href="{% url 'home' %}" class="text-reset" aria-label="Leads to home page">Home</a>
                                     </p>
                                     <p>
-                                        <a href="{% url 'products' %}" class="text-reset">Products</a>
+                                        <a href="{% url 'products' %}" class="text-reset" aria-label="Leads to products page">Products</a>
                                     </p>
                                     <p>
-                                        <a href="{% url 'contact' %}" class="text-reset">Contact</a>
+                                        <a href="{% url 'contact' %}" class="text-reset" aria-label="Leads to contact us page">Contact</a>
                                     </p>
                                     <p>
-                                        <a href="{% url 'about' %}" class="text-reset">About Us</a>
+                                        <a href="{% url 'about' %}" class="text-reset" aria-label="Leads to about us page">About Us</a>
                                     </p>
                                     <p>
-                                        <a href="{% url 'privacy_policy' %}" class="text-reset">Privacy Policy</a>
+                                        <a href="{% url 'privacy_policy' %}" class="text-reset" aria-label="Leads to privacy policy page">Privacy Policy</a>
                                     </p>
                                 </div>
                                 <!-- Grid column -->
@@ -253,10 +253,10 @@
                                     <!-- Right -->
                                     <div>
                                         <a href="https://www.facebook.com/people/Wexford-Berries/61560089931918/" target="_blank" rel="noopener"
-                                            class="text-white">
+                                            class="text-white" aria-label="Leads to store Facebook page">
                                             <i class="fab fa-facebook-f"></i>
                                         </a>
-                                        <a href="https://instagram.com" target="_blank" rel="noopener" class="text-white">
+                                        <a href="https://instagram.com" target="_blank" rel="noopener" class="text-white" aria-label="Leads to Instagram">
                                             <i class="fab fa-instagram"></i>
                                         </a>
                                     </div>

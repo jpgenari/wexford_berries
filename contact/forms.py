@@ -1,8 +1,11 @@
 from django import forms
 from .models import Contact
 
+
 class ContactForm(forms.ModelForm):
-    
+    """
+    Renders files in the database to be filled by user when submitting contact
+    """
     class Meta:
         model = Contact
         fields = [
@@ -11,8 +14,9 @@ class ContactForm(forms.ModelForm):
             'subject',
             'order_number',
             'message']
-    
+
     def __init__(self, *args, **kwargs):
+        """Renders placeholders for user properly fill forms fields"""
         super().__init__(*args, **kwargs)
         placeholders = {
             'email': 'Email Address',
@@ -32,3 +36,4 @@ class ContactForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = \
                 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+            

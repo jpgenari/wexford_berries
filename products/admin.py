@@ -1,9 +1,9 @@
 from django.contrib import admin
 from . models import Product
 
-# Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
+    """Renders products in the database on Django admin panel"""
     list_display = (
         'sku',
         'name',

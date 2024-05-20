@@ -24,7 +24,7 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div>
-                        <button class="btn btn-green rounded-0 text-uppercase float-left mb-2" type="submit">Send</button>
+                        <button class="btn btn-green rounded-0 text-uppercase float-left mb-2" type="submit" aria-label="Sends message to the shop">Send</button>
                         <span class="small float-right">* required</span>
                     </div>
                 </form> 

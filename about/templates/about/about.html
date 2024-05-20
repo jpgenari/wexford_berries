@@ -24,7 +24,7 @@
                 {% if request.user.is_superuser %}
                 <div class="text-right">
                     <small class="ml-3">
-                        <a href="{% url 'edit_about' %}" >Edit</a>
+                        <a href="{% url 'edit_about' %}" aria-label="Opens about us edit page">Edit</a>
                     </small>
                 </div>
                 {% endif %}

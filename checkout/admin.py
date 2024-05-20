@@ -1,13 +1,21 @@
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
-# Register your models here.
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Manages OrderLineItem objects within the Order's admin page.
+    'lineitem_total' is read-only.
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
+
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Customizes the admin interface for the Order model,
+    including display and ordering of fields.
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
@@ -27,5 +35,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'grand_total')
 
     ordering = ('-date',)
+
 
 admin.site.register(Order, OrderAdmin)

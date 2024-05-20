@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 from products.models import Product
 
 def bag_contents(request):
-    
+    """Gets all bag contents and return contexts to checkout"""
     bag_items = []
     total = 0
     product_count = 0

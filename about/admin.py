@@ -1,9 +1,9 @@
 from django.contrib import admin
 from . models import AboutPage
 
-# Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
+    """Renders stored content to the Django admin panel"""
     list_display = (
         'content',
         'last_updated',
@@ -11,5 +11,6 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('last_updated',)
+
 
 admin.site.register(AboutPage, ProductAdmin)

@@ -38,9 +38,9 @@
                     <p class="text-muted mt-3 text-center text-md-left">
 
                         {% if search_term or current_sorting != 'None_None' %}
-                            <span class="small"><a href="{% url 'products' %}">All Products</a> | </span>
+                            <span class="small"><a href="{% url 'products' %}" aria-label="Opens all product page">All Products</a> | </span>
                         {% endif %}
-                        <span class="small"><a href="{% url 'view_wishlist' %}"> My Wishlist</a> | </span>
+                        <span class="small"><a href="{% url 'view_wishlist' %}" aria-label="Opens wihslist page"> My Wishlist</a> | </span>
                         {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
@@ -50,11 +50,11 @@
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
                             {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}" aria-label="Opens product details page">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                             {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
+                                <a href="{% url 'product_detail' product.id %}" aria-label="Opens product details page">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                             {% endif %}
@@ -72,8 +72,8 @@
                                         {% endif %}
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">
-                                                <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                                <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
+                                                <a href="{% url 'edit_product' product.id %}" aria-label="Opens product edit page">Edit</a>
+                                                <a href="{% url 'delete_product' product.id %}" class="text-danger" aria-label="Deletes product from shop">Delete</a>
                                             </small>
                                         {% endif %}
                                     </div>
@@ -109,7 +109,7 @@
 </div>
 
 <div class="btt-button shadow-sm rounded-0 border border-green">
-    <a class="btt-link d-flex h-100">
+    <a class="btt-link d-flex h-100" aria-label="Scrolls page back to the top">
         <i class="fas fa-arrow-up text-green mx-auto my-auto"></i>
     </a>	
 </div>
