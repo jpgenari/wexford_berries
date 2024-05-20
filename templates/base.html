@@ -43,7 +43,10 @@
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-green my-0"><strong>Wexford</strong> Berries</h2>
+                        <h2 class="logo-font my-0">
+                            <strong class="text-red">Wexford</strong>
+                            <span class="text-green">| Berries</span>
+                        </h2>
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -109,7 +112,7 @@
                 </nav>
             </div>
             <div id="delivery-banner" class="row text-center">
-                <div class="col bg-green text-white">
+                <div class="col text-white" id="delivery-animation">
                     <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
                 </div>
             </div>
@@ -140,7 +143,7 @@
         {% endblock %}
 
         <!-- Footer -->
-        <footer class="text-center bg-green">
+        <footer class="text-center bg-red">
             <div class="container quotes-container content-container text-white">
                 <div>
     
