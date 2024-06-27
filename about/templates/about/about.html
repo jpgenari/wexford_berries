@@ -20,7 +20,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 mt-3">
-                <p id="about-size-mobile">{{ about_page.content|safe }}</p>
+                <div id="about-size-mobile">{{ about_page.content|safe }}</div>
                 {% if request.user.is_superuser %}
                 <div class="text-right">
                     <small class="ml-3">
