@@ -245,6 +245,10 @@ footer p {
     color: white
 }
 
+.custom-margin-bottom {
+    margin-bottom: 1rem;
+}
+
 /* -------------------------------- Animations */
 
 @-webkit-keyframes freeDelivery {  
