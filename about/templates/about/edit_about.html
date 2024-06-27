@@ -55,6 +55,12 @@
             'alignright alignjustify | bullist numlist outdent indent | ' +
             'removeformat | help',
         content_css: '//www.tiny.cloud/css/codepen.min.css'
+        setup: function (editor) {
+            // Ensures extra </p> tags are removed
+            editor.on('GetContent', function (e) {
+                e.content = e.content.replace(/<\/p><\/p>/g, '</p>');
+            });
+        }
     });
 </script>
 {% endblock %}
