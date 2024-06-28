@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'storages',
     'tinymce',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
