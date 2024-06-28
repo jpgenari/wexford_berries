@@ -1,4 +1,4 @@
-# Wexford | Verries
+# Wexford | Berries
 
 Wexford Berries is a leading B2C e-commerce platform, offering a wide selection of the freshest and highest quality berries directly to your doorstep. We pride ourselves on sourcing our berries from trusted local farms, ensuring every order is packed with flavor and nutrients. With our easy-to-navigate online store, customers can choose from a variety of berries, including strawberries, blueberries, raspberries, and more. Enjoy the convenience of farm-fresh deliveries and taste the difference with Wexford Berries—where premium quality meets unbeatable freshness.
 
