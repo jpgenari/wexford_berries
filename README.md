@@ -200,54 +200,121 @@ Using integration with [Mailchimp](https://mailchimp.com/?currency=EUR).
 
 ### HTML - W3C Validator
 
-No errors flagged when testing on [W3C](https://validator.w3.org/nu/) with option checking by address, only few warnings, as below:
+No errors flagged when testing on [W3C](https://validator.w3.org/nu/) with option checking by address, only few warnings flagged. Screenshots below displaying code from each file tested:
 
 **PAGE**|**SCREENSHOT**
 ----------|----------
-[Home](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-home.png)
-[Login](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Flogin%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-login.png)
-[Register](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Fsignup%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-signup.png)
-[Logout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Flogout%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-logout.png)
-[Verify Email](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Fconfirm-email%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-email-verify.png)
-[Email Confirmation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Fconfirm-email%2FMTY%3A1sOcHm%3AcB18SOlxDhrSrwiVYeJEXqJl9lkUY-pdrw1uqX55Njw%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-email-confirm.png)
-[Password Reset](https://wexford-berries-229479cc7505.herokuapp.com/accounts/password/reset/)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-password-reset.png)
-[Products](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fproducts%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-products.png)
-[Add Product](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fproducts%2Fadd%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-add-product.png)
-[Edit Product](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fproducts%2Fedit%2F13%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-edit-product.png)
-[Wishlist](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fwishlist%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-wishlist.png)
-[Bag](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fbag%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-bag.png)
-[Checkout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fcheckout%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-checkout.png)
-[Profile](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fprofile%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-profile.png)
-Order Details|![W3C validation screenshot](/documentation/w3c_html/w3c-html-order-details.png)
-[Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fcontact%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-contact.png)
-[About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fabout%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-about.png)
-[Edit About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fabout%2Fedit%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-edit-about.png)
-[Privacy Policy](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fpolicies%2Fprivacy%2F)|![W3C validation screenshot](/documentation/w3c_html/w3c-html-privacy.png)
+[Home](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2F)|![W3C validation screenshot homepage](/documentation/w3c_html/w3c-html-home.png)
+[Login](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Flogin%2F)|![W3C validation screenshot login page](/documentation/w3c_html/w3c-html-login.png)
+[Register](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Fsignup%2F)|![W3C validation screenshot sign up page](/documentation/w3c_html/w3c-html-signup.png)
+[Logout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Flogout%2F)|![W3C validation screenshot logout page](/documentation/w3c_html/w3c-html-logout.png)
+[Verify Email](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Fconfirm-email%2F)|![W3C validation screenshot verify email page](/documentation/w3c_html/w3c-html-email-verify.png)
+[Email Confirmation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Faccounts%2Fconfirm-email%2FMTY%3A1sOcHm%3AcB18SOlxDhrSrwiVYeJEXqJl9lkUY-pdrw1uqX55Njw%2F)|![W3C validation screenshot email confirmation page](/documentation/w3c_html/w3c-html-email-confirm.png)
+[Password Reset](https://wexford-berries-229479cc7505.herokuapp.com/accounts/password/reset/)|![W3C validation screenshot password reset page](/documentation/w3c_html/w3c-html-password-reset.png)
+[Products](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fproducts%2F)|![W3C validation screenshot products page](/documentation/w3c_html/w3c-html-products.png)
+[Add Product](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fproducts%2Fadd%2F)|![W3C validation screenshot add product page](/documentation/w3c_html/w3c-html-add-product.png)
+[Edit Product](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fproducts%2Fedit%2F13%2F)|![W3C validation screenshot edit product page](/documentation/w3c_html/w3c-html-edit-product.png)
+[Wishlist](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fwishlist%2F)|![W3C validation screenshot wishlist page](/documentation/w3c_html/w3c-html-wishlist.png)
+[Bag](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fbag%2F)|![W3C validation screenshot bag page](/documentation/w3c_html/w3c-html-bag.png)
+[Checkout](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fcheckout%2F)|![W3C validation screenshot checkout page](/documentation/w3c_html/w3c-html-checkout.png)
+[Profile](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fprofile%2F)|![W3C validation screenshot profile page](/documentation/w3c_html/w3c-html-profile.png)
+Order Details|![W3C validation screenshot order details page](/documentation/w3c_html/w3c-html-order-details.png)
+[Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fcontact%2F)|![W3C validation screenshot contact page](/documentation/w3c_html/w3c-html-contact.png)
+[About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fabout%2F)|![W3C validation screenshot about page](/documentation/w3c_html/w3c-html-about.png)
+[Edit About](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fabout%2Fedit%2F)|![W3C validation screenshot edit about page](/documentation/w3c_html/w3c-html-edit-about.png)
+[Privacy Policy](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwexford-berries-229479cc7505.herokuapp.com%2Fpolicies%2Fprivacy%2F)|![W3C validation screenshot privacy policy page](/documentation/w3c_html/w3c-html-privacy.png)
+
+[Back to top](#wexford-berries "Back to top")
 
 ### CSS - Jigsaw W3C Validator
 
-No errors flagged when testing on [Jigsaw W3C](https://jigsaw.w3.org/css-validator/) by direct input, only warnings - mostly 'vendor extension':
+No errors flagged when testing on [Jigsaw W3C](https://jigsaw.w3.org/css-validator/) by direct input, only warnings - mostly 'vendor extension'. Screenshots below displaying code from each file tested:
 
 **FILE**|**SCREENSHOT**
 ----------|----------
-base.css|![jigsaw css validation screenshot](/documentation/w3c_css/css-base.png)
-checkout.css|![jigsaw css validation screenshot](/documentation/w3c_css/css-checkout.png)
-profiles.css|![jigsaw css validation screenshot](/documentation/w3c_css/css-profiles.png)
+[/.../checkout.css](https://github.com/jpgenari/wexford_berries/blob/main/checkout/static/checkout/css/checkout.css)|![jigsaw css validation screenshot checkout.css](/documentation/w3c_css/css-checkout.png)
+[/.../profiles.css](https://github.com/jpgenari/wexford_berries/blob/main/profiles/static/profiles/css/profile.css)|![jigsaw css validation screenshot profiles.css](/documentation/w3c_css/css-profiles.png)
+[/.../base.css](https://github.com/jpgenari/wexford_berries/blob/main/static/css/base.css)|![jigsaw css validation screenshot base.css](/documentation/w3c_css/css-base.png)
 
+[Back to top](#wexford-berries "Back to top")
 
 ### JavaScript - JS Hint
 
-No errors flagged on [JS Hint](https://jshint.com/). All JavaScript texts screenshots can be found in [jshnt](https://github.com/jpgenari/wexford_berries/tree/main/documentation/jshint) with naming containing where the code is.
+No errors flagged when testing on [JS Hint](https://jshint.com/), only warnings flagged. Screenshots below displaying code from each file tested:
 
-  - Only few warnings flagged.
+**FILE**|**SCREENSHOT**
+----------|----------
+[/.../add_product.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/add_product.html)|![JS Hint validation screenshot add_product.html](/documentation/jshint/edit_add_product.html.png)
+[/.../bag.html](https://github.com/jpgenari/wexford_berries/blob/main/bag/templates/bag/bag.html)|![JS Hint validation screenshot bag.html](/documentation/jshint/bag.html.png)
+[/.../base.html](https://github.com/jpgenari/wexford_berries/blob/main/templates/base.html)|![JS Hint validation screenshot base.html](/documentation/jshint/base.html.png)
+[/.../checkout.html](https://github.com/jpgenari/wexford_berries/blob/main/checkout/templates/checkout/checkout.html)|![JS Hint validation screenshot checkout.html](/documentation/jshint/checkout.html.png)
+[/.../countryfield.js](https://github.com/jpgenari/wexford_berries/blob/main/profiles/static/profiles/js/countryfield.js)|![JS Hint validation screenshot countryfield.js](/documentation/jshint/profiles_countryfield.js.png)
+[/.../custom_quantity_imput_script.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/custom_widget_templates/custom_clearable_file_input.html)|![JS Hint validation screenshot custom_clearable_file_input.html](/documentation/jshint/products_quantity_imput_script.html.png)
+[/.../edit_product.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/edit_product.html)|![JS Hint validation screenshot edit_product.html](/documentation/jshint/edit_add_product.html.png)
+[/.../products.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/products.html)|![JS Hint validation screenshot products.html](/documentation/jshint/products.html.png)
+[/.../stripe_elements.js](https://github.com/jpgenari/wexford_berries/blob/main/checkout/static/checkout/js/stripe_elements.js)|![JS Hint validation screenshot stripe_elements.js](/documentation/jshint/stripe_elements.js.png)
+[/.../wishlist.html](https://github.com/jpgenari/wexford_berries/blob/main/wishlist/templates/wishlist/wishlist.html)|![JS Hint validation screenshot wishlist.html](/documentation/jshint/wishlist.html.png)
+
+[Back to top](#wexford-berries "Back to top")
 
 ### Python and Django - CI Python Linter
 
-No errors flagged on [CI Python Linter](https://pep8ci.herokuapp.com/). All Python Linter screenshots can be found in the folder [python_linter](https://github.com/jpgenari/wexford_berries/tree/main/documentation/python_linter) with naming containing **app_file**.
+No errors flagged when testing on [CI Python Linter](https://pep8ci.herokuapp.com/). Screenshots below displaying code from each file tested:
+
+**APP**|**FILE**|**SCREENSHOT**
+----------|----------|----------
+about|[admin.py](https://github.com/jpgenari/wexford_berries/blob/main/about/admin.py)|![Python Linter validation screenshot /about/admin.py](/documentation/python_linter/about_admin.png)
+about|[forms.py](https://github.com/jpgenari/wexford_berries/blob/main/about/forms.py)|![Python Linter validation screenshot /about/forms.py](/documentation/python_linter/about_forms.png)
+about|[models.py](https://github.com/jpgenari/wexford_berries/blob/main/about/models.py)|![Python Linter validation screenshot /about/models.py](/documentation/python_linter/about_models.png)
+about|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/about/urls.py)|![Python Linter validation screenshot /about/urls.py](/documentation/python_linter/about_urls.png)
+about|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/about/views.py)|![Python Linter validation screenshot /about/views.py](/documentation/python_linter/about_views.png)
+bag|[contexts.py](https://github.com/jpgenari/wexford_berries/blob/main/bag/contexts.py)|![Python Linter validation screenshot /bag/contexts.py](/documentation/python_linter/bag_contexts.png)
+bag|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/bag/urls.py)|![Python Linter validation screenshot /bag/urls.py](/documentation/python_linter/bag_urls.png)
+bag|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/bag/views.py)|![Python Linter validation screenshot /bag/views.py](/documentation/python_linter/bag_views.png)
+checkout|[admin.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/admin.py)|![Python Linter validation screenshot /checkout/admin.py](/documentation/python_linter/checkout_admin.png)
+checkout|[forms.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/forms.py)|![Python Linter validation screenshot /checkout/forms.py](/documentation/python_linter/checkout_forms.png)
+checkout|[models.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/models.py)|![Python Linter validation screenshot /checkout/models.py](/documentation/python_linter/checkout_models.png)
+checkout|[signals.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/signals.py)|![Python Linter validation screenshot /checkout/signals.py](/documentation/python_linter/checkout_signals.png)
+checkout|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/urls.py)|![Python Linter validation screenshot /checkout/urls.py](/documentation/python_linter/checkout_urls.png)
+checkout|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/views.py)|![Python Linter validation screenshot /checkout/views.py](/documentation/python_linter/checkout_views.png)
+checkout|[webhooks.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/webhooks.py)|![Python Linter validation screenshot /checkout/webhooks.py](/documentation/python_linter/checkout_webhooks.png)
+checkout|[webhook_handler.py](https://github.com/jpgenari/wexford_berries/blob/main/checkout/webhook_handler.py)|![Python Linter validation screenshot /checkout/webhook_handler.py](/documentation/python_linter/checkout_webhooks_handler.png)
+contact|[admin.py](https://github.com/jpgenari/wexford_berries/blob/main/contact/admin.py)|![Python Linter validation screenshot /contact/admin.py](/documentation/python_linter/contact_admin.png)
+contact|[forms.py](https://github.com/jpgenari/wexford_berries/blob/main/contact/forms.py)|![Python Linter validation screenshot /contact/forms.py](/documentation/python_linter/contact_forms.png)
+contact|[models.py](https://github.com/jpgenari/wexford_berries/blob/main/contact/models.py)|![Python Linter validation screenshot /contact/models.py](/documentation/python_linter/contact_models.png)
+contact|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/contact/urls.py)|![Python Linter validation screenshot /contact/urls.py](/documentation/python_linter/contact_urls.png)
+contact|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/contact/views.py)|![Python Linter validation screenshot /contact/views.py](/documentation/python_linter/contact_views.png)
+home|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/home/urls.py)|![Python Linter validation screenshot /home/urls.py](/documentation/python_linter/home_urls.png)
+home|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/home/views.py)|![Python Linter validation screenshot /home/views.py](/documentation/python_linter/home_views.png)
+products|[admin.py](https://github.com/jpgenari/wexford_berries/blob/main/products/admin.py)|![Python Linter validation screenshot /products/views.py](/documentation/python_linter/products_admin.png)
+products|[forms.py](https://github.com/jpgenari/wexford_berries/blob/main/products/forms.py)|![Python Linter validation screenshot /products/forms.py](/documentation/python_linter/products_forms.png)
+products|[models.py](https://github.com/jpgenari/wexford_berries/blob/main/products/models.py)|![Python Linter validation screenshot /products/models.py](/documentation/python_linter/products_models.png)
+products|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/products/urls.py)|![Python Linter validation screenshot /products/urls.py](/documentation/python_linter/products_urls.png)
+products|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/products/views.py)|![Python Linter validation screenshot /products/views.py](/documentation/python_linter/products_views.png)
+products|[widgets.py](https://github.com/jpgenari/wexford_berries/blob/main/products/widgets.py)|![Python Linter validation screenshot /products/widgets.py](/documentation/python_linter/products_widgets.png)
+profiles|[forms.py](https://github.com/jpgenari/wexford_berries/blob/main/profiles/forms.py)|![Python Linter validation screenshot /profiles/forms.py](/documentation/python_linter/profiles_forms.png)
+profiles|[models.py](https://github.com/jpgenari/wexford_berries/blob/main/profiles/models.py)|![Python Linter validation screenshot /profiles/models.py](/documentation/python_linter/profiles_models.png)
+profiles|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/profiles/urls.py)|![Python Linter validation screenshot /profiles/urls.py](/documentation/python_linter/profiles_urls.png)
+profiles|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/profiles/views.py)|![Python Linter validation screenshot /profiles/views.py](/documentation/python_linter/profiles_views.png)
+wexford_berries|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/wexford_berries/urls.py)|![Python Linter validation screenshot /wexford_berries/urls.py](/documentation/python_linter/main_urls.png)
+wexford_berries|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/wexford_berries/views.py)|![Python Linter validation screenshot /wexford_berries/views.py](/documentation/python_linter/main_views.png)
+wishlist|[admin.py](https://github.com/jpgenari/wexford_berries/blob/main/wishlist/admin.py)|![Python Linter validation screenshot /wishlist/admin.py](/documentation/python_linter/wishlist_admin.png)
+wishlist|[models.py](https://github.com/jpgenari/wexford_berries/blob/main/wishlist/models.py)|![Python Linter validation screenshot /wishlist/models.py](/documentation/python_linter/wishlist_models.png)
+wishlist|[urls.py](https://github.com/jpgenari/wexford_berries/blob/main/wishlist/urls.py)|![Python Linter validation screenshot /wishlist/urls.py](/documentation/python_linter/wishlist_urls.png)
+wishlist|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/wishlist/views.py)|![Python Linter validation screenshot /wishlist/views.py](/documentation/python_linter/wishlist_views.png)
+
+[Back to top](#wexford-berries "Back to top")
 
 ### Performance - Google Lighthouse
 
-No performance issues flagged when running Google Chrome Lighthouse, only warnings. Screenshot stored in the folder [performance_lighthouse](https://github.com/jpgenari/wexford_berries/tree/main/documentation/performance_lighthouse) with naming corresponding with the placed tested.
+No performance issues flagged when running Google Chrome Lighthouse, only warnings. Screenshots below displaying code from each file tested:
+
+**PAGE**|**VERSION**|**SCREENSHOT**
+----------|----------|----------
+Home|Desktop|![Lighthouse validation screenshot home page on desktop](/documentation/performance_lighthouse/home_desktop.png)
+Home|Mobile|![Lighthouse validation screenshot home page on mobile](/documentation/performance_lighthouse/home_mobile.png)
+Products|Desktop|![Lighthouse validation screenshot products page on desktop](/documentation/performance_lighthouse/products_desktop.png)
+Products|Mobile|![Lighthouse validation screenshot home products on mobile](/documentation/performance_lighthouse/products_mobile.png)
 
 ### Manual Testing
 
