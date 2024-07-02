@@ -70,6 +70,72 @@ Link to the live web app: [Wexford | Berries](https://wexford-berries-229479cc75
 
 ### User Stories
 
+#### Viewing and Navigation
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+shopper|view a list of products|I can select items to purchase
+shopper|view product details|identify price, description, product rating and product image
+shopper|easily view the total of my purchases at any time|avoid spending too much
+
+#### Registration and User Accounts
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+site user|easily register for an account|have a personal account and be able to view my profile
+site user|easily login or logout|access my personal account information
+site user|easily recover my password in case I forget it|recover access to my account
+site user|receive an email confirmation after registering|verify that my account registration was successful
+site user|have a personalized user profile|view my personal order history and order confirmations, and save my payment information
+
+#### Sorting and Searching
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+shopper|sort the list of available products|easily identify the best rated and best priced products
+shopper|search for a product by name or description|find a specific product l'd like to purchase
+shopper|easily see what I've searched for and the number of results|quickly decide whether the product I want is available
+
+#### Purchasing and Checkout
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+shopper|easily select quantity of a product when purchasing it|ensure I don't accidentally select the wrong product or its quantity
+shopper|easily edit quantity of a product when purchasing it|add or remove number of products in my shopping bag
+shopper|view items in my bag to be purchased|identify the total cost of my purchase and all items I will receive
+shopper|easily enter my payment information|checkout quickly and with no hassles
+shopper|feel my personal and payment information is safe and secure|confidently provide the needed information to make a purchase
+shopper|view an order confirmation after checkout|verify that I haven't made any mistakes
+shopper|receive an email confirmation after checking out|keep the confirmation of what I've purchased for my records
+
+#### Admin and Store Management
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+store owner|add a product|add new items to my store
+store owner|edit/update a product|change product prices, descriptions, images, and other product criteria
+store owner|delete a product|remove items that are no longer for sale
+
+#### Wishlist
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+shopper|easily have access to a wish list|add, remove and view items in my wish list for future purchases
+
+#### Contact us
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+shopper|easily send an email to the store|contact them if I have any questions about an order, product and delivery
+
+#### About
+
+**AS A**|**I CAN**|**SO THAT**
+----------|----------|----------
+store owner|easily update the about us page|I can update about page when needed
+
+### Agile Development
+
 Agile methodology applied considering available time to build project, where many features such as Reviews haven't been implemented yet. Users stories can be found in the Kanban board.
 
 Kanban board available [here](https://github.com/users/jpgenari/projects/9/views/1).
