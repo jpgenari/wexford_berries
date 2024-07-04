@@ -12,112 +12,97 @@ For testing purposes, you can utilize the following [Stripe test card](https://d
 
 Please note that payments made using valid debit/credit cards will not be processed, and the card will not be charged. Additionally, no orders placed will be fulfilled.
 
-## Features
+## Table of contents
 
-### Header and Footer
++ [UX - USER EXPERIENCE](#ux---user-experience "UX - USER EXPERIENCE")
+  + [e-Commerce Business Model](#e---ommerce-business-model "e-Commerce Business Model")
+  + [UI - User Interface](#ui---user-interface "UI - User Interface")
+  + [User Stories](#user-stories "User Stories")
+    - [Viewing and Navigation](#viewing-and-navigation "Viewing and Navigation")
+    - [Registration and User Accounts](#registration-and-user-accounts "Registration and User Accounts")
+    - [Sorting and Searching](#registration-and-user-accounts "Sorting and Searching")
+    - [Purchasing and Checkout](#purchasing-and-checkout "Purchasing and Checkout")
+    - [Admin and Store Management](#admin-and-store-management "Admin and Store Management")
+    - [Wishlist](#wishlist "Wishlist")
+    - [Contact us](#contact-us "Contact us")
+    - [About](#about "About")
+  + [Wireframes](#wireframes "Wireframes")
+  + [Colors](#colors "Colors")
 
-Header and page should be visible in every page, being also responsive on mobile.
++ [FEATURES](#features "FEATURES")
+  + [Header and Footer](#header-and-footer "Header and Footer")
+    - [Header](#header "Header")
+    - [Footer](#footer "Footer")
+  + [Landing page](#landing-page "Landing page")
+  + [Products](#products "Products")
+    - [Product Details](#product-details "Product Details")
+    - [Product Management](#product-management "Product Management")
+  + [Bag](#bag "Bag")
+  + [Checkout](#checkout "Checkout")
+  + [Account](#account "Account")
+    - [My Profile](#my-profile "My Profile")
+    - [Wishlist](#wishlist-1 "Wishlist")
+  + [Contact](#contact "Contact")
+  + [About Us](#about-us "About Us")
+  + [Privacy Policy](#privacy-policy "Privacy Policy")
 
-#### Header
++ [ENTITY RELATIONSHIP DIAGRAM](#entity-relationship-diagram "ENTITY RELATIONSHIP DIAGRAM")
 
-The first block at the top and displays the shop logo at the left, a searching box and menu options with 'Products', 'About Us' and 'Contact' which lead to the specific options at the middle and 'My Account' and shopping bag at the right side. If the user is logged in, within the menu options user will also see 'Wishlist' that leads to the products wishlist page. Below mains header content, there is an engaging message offering free delivery upon a spending threshold.
++ [MARKETING STRATEGIES FOR WEXFORD BERRIES](#marketing-strategies-for-wexford-berries "MARKETING STRATEGIES FOR WEXFORD BERRIES")
+  + [Key Marketing Strategies](#key-marketing-strategies "Key Marketing Strategies")
+  + [Meta Tags for SEO](#meta-tags-for-seo "Meta Tags for SEO")
+  + [Facebook Page](#facebook-page "Facebook Page")
+  + [Newsletter](#newsletter "Newsletter")
+    - [Newsletter on footer](#newsletter-on-footer "Newsletter on footer")
+    - [Mailchimp audience](#mailchimp-audience "Mailchimp audience")
 
-This block is always visible, fixed at the top working as the navigating menu for the entire application. For admin users, there will be another menu option for store management, where store owner can add / remove products in sale and also edit current products.
++ [VALIDATING AND TESTING](#validating-and-testing "VALIDATING AND TESTING")
+  + [Validator Testing](#validator-testing "Validator Testing")
+    - [HTML - W3C Validator](#html---w3c-validator "HTML - W3C Validator")
+    - [CSS - Jigsaw W3C Validator](#css---jigsaw-w3c-validator "CSS - Jigsaw W3C Validator")
+    - [JavaScript - JS Hint](#javascript---js-hint "JavaScript - JS Hint")
+    - [Python and Django - CI Python Linter](#python-and-django---ci-python-linter "Python and Django - CI Python Linter")
+    - [Performance - Google Lighthouse](#performance---google-lighthouse "Performance - Google Lighthouse")
+  + [Manual Testing](#manual-testing "Manual Testing")
 
-#### Footer
++ [DEVELOPMENT AND DEPLOYMENT](#deployment-and-deployment "DEVELOPMENT AND DEPLOYMENT")
+  + [Agile Development](#agile-development "Agile Development")
+  + [ElephantSQL Database](#elephantsql-database "ElephantSQL Database")
+  + [Amazon AWS](#amazon-aws "Amazon AWS")
+    - [S3 Bucket](#s3-bucket "S3 Bucket")
+    - [IAM](#iam "IAM")
+    - [Set up AWS](#set-up-aws "Set up AWS")
+  + [Stripe API](#stripe-api "Stripe API")
+  + [Gmail API](#gmail-api "Gmail API")
+  + [Heroku](#heroku "Heroku")
+  + [Cloning Project](#cloning-project "Cloning Project")
+  + [Forking Project](#forking-project "Forking Project")
 
-The third block is at the bottom of page, fixed there. It contains three main rows, with the first one holding the subscribe to the newsletter section. The second is split into three columns displaying the shop name and message, useful links where users and shoppers can find links to 'Home' page, 'Products' page, 'Contact' page, 'About Us' page and 'Privacy Policy' page, and contact information with shop address, email and social. The third one displays the copyright section.
++ [TECHNOLOGIES](#technologies "TECHNOLOGIES")
+  + [Languages](#languages "Languages")
+  + [Frameworks and Libraries](#frameworks-and-libraries "Frameworks and Libraries")
+  + [Development and Deploy](#development-and-deploy "Development and Deploy")
 
-**SECTION**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Header|anonymous|not logged in user|![header-anonymous](/documentation/features/header_annonymous.png)
-Header|logged in|'My Account' as a shopper|![header-shopper](/documentation/features/header_shopper.png)
-Header|logged in|'My Account' as store owner|![header-store-owner](/documentation/features/header_store_owner.png)
-Footer|anonymous or logged in||![footer](/documentation/features/footer.png)
++ [CREDITS](#credits "CREDITS")
+  + [Content](#content "Content")
+  + [Acknowledgement](#acknowledgement "Acknowledgement")
 
-### Landing page
+## UX - USER EXPERIENCE
 
-The landing page displays header at the top and footer at the bottom with the content in section in between them. In this case, the content section displays an image with multiple berry fruits to capture users' attention. Above the image, it is displayed an engaging message and a prominently 'Shop Now' button, easily accessible leading users to the products page.
+### e-Commerce Business Model
 
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Home|anonymous|landing page view on first access|![landing-page](/documentation/features/home.png)
+Wexford Berries operates under a B2C (business-to-consumer) e-commerce model, offering a streamlined and secure shopping experience with single payment transactions. Key features of the platform include:
 
-### Products
+1.	**Easy and Secure Payment**: Ensuring a hassle-free and safe checkout process for all customers.
+2.	**Authentication System**: Allowing shoppers to create profiles for personalized experiences and secure access.
+3.	**Search and Filtering Functionality**: Enabling customers to efficiently find and browse products according to their preferences.
+4.	**Wish List**: Providing shoppers the ability to save products they are interested in purchasing at a later date.
 
-The products page display all available products with simplicity and clean design. Each product should have an engaging image, name, price and rating. This page should have different viewing depending on users' status - either as a shopper or store owner. It also displays a shortcut button to bring users back to the top after scrolling down at the bottom left, making it easier return to the top of the page.
+These features collectively enhance the shopping experience, making Wexford Berries a convenient and reliable platform for consumers. Additionally, the shop offers a variety of berry fruits online, including some sourced directly from Wexford, Ireland, which inspired the shop’s name.
 
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Products|shopper|viewing products page as a shopper|![products-shopper](/documentation/features/products_shopper.png)
-Products|store owner|viewing products page as store owner, with the buttons to either edit or delete products|![products-store-owner](/documentation/features/products_store_owner.png)
+### UI - User Interface
 
-### Product Details
-
-Upon clicking on specific product, user is direct to the product details page. In this page the product will display a larger image, product name, price, rating, description, and option to add a quantity of the product to the shopping bag. Depending on the user status, where shoppers have the option to add product to their wishlist, while store owners also have the buttons to edit or delete product as well.
-
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Product details|shopper|viewing product details page as a shopper|![product-details-shopper](/documentation/features/product_details_shopper.png)
-Product details|store owner|viewing product details page as store owner, where it displays the buttons to either edit or delete products|![product-details-store-owner](/documentation/features/product_details_store_owner.png)
-
-### Product Management
-
-Available for store owner (or user admins) only, in this page products can be added to the shop including product name, price, rating, description and image. This complements the store management alongside buttons edit and delete previously mentioned, when clicking on edit button, store owner is lead to this page.
-
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Product add|store owner|add product to the shop|![product-management-add](/documentation/features/product_management.png)
-Product edit|store owner|edit product currently in the shop|![product-management-add](/documentation/features/product_management_edit.png)
-
-### Wishlist
-
-Logged in shoppers should have access to the wishlist page, where they an view all products added to their wishlist. In this page shoppers can view quantity of item in their wishlist and each product displayed following same layout as products page.
-
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Wishlist|logged in shopper|view products in wishlist for logged in shoppers|![wishlist-page](/documentation/features/wishlist.png)
-
-### Bag
-
-This page allows shoppers to view all products in their shopping bag before completing a purchase. When the product is added to their shopping bag, from product details page, an alert banner will be displayed indicating item has been added and shoppers can go straight away to the bag page. Once in the bag page, users can view items, update quantities or remove them entirely before going to secure checkout.
-
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Product details|shoppers (logged in or not)|when product is added to the bag, an alert message pops-up|![product-details-bag](/documentation/features/product_details_bag.png)
-Bag|shoppers (logged in or not)|where shopper can view details of their shopping bag|![bag](/documentation/features/bag.png)
-
-### Checkout
-
-The checkout page allows shoppers to fill out their details, delivery and payment info. The payment is securely processed by Stripe API. After the checkout is complete, shopper will directed to a confirmation page with order details and a confirmation email is sent to the order email. If the shopper is not logged in, they order details will not be saved to any profile.
-
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Checkout|shoppers (logged in or not)|where shoppers fill out details|![checkout](/documentation/features/checkout.png)
-Checkout success|shoppers (logged in or not)|order confirmation details|![order-confirmation](/documentation/features/order_confirmation.png)
-Email inbox|shoppers (logged in or not)|received confirmation email|![confirmation-email](/documentation/features/confirmation_email.png)
-
-### Contact
-
-In the contact page, shoppers and general users can easily get in touch with the shop by filling required contact fields. Once the message is submitted the sender gets an instant confirmation page and also an email with received message content and confirming the team will contact soon. This feature aims to improve overall customer satisfaction by facilitating feedback and problem solving.
-
-**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
-----------|----------|----------|----------
-Contact|shoppers (logged in or not) and users in general|where all users and customer can easily get in touch with store|![contact](/documentation/features/contact.png)
-Contact success|shoppers (logged in or not) and users in general|confirms message has been received|![contact](/documentation/features/contact_message_received.png)
-Email inbox|shoppers (logged in or not) and users in general|confirmation email sent to sender|![contact](/documentation/features/email_message_received.png)
-
-### About
-
-- Anonymous
-![about-anonymous](/documentation/features/about.png)
-
-- Superuser
-![about-superuser](/documentation/features/about_superuser.png)
-
-[Back to top](#wexford--berries "Back to top")
-
-## User Stories and Agile
+The user interface is designed to be extremely simple and distraction-free, utilizing colors that evoke the essence of berry fruits. This color scheme not only creates a visually appealing experience but also stimulates shoppers to engage more deeply with the shop. The intuitive layout ensures that customers can easily navigate the site, find products, and complete their purchases effortlessly.
 
 ### User Stories
 
@@ -185,13 +170,154 @@ shopper|easily send an email to the store|contact them if I have any questions a
 ----------|----------|----------
 store owner|easily update the about us page|I can update about page when needed
 
-### Agile Development
+[Back to top](#wexford--berries "Back to top")
 
-Agile methodology applied considering available time to build project, where many features such as Reviews haven't been implemented yet. Users stories can be found in the Kanban board.
+### Wireframes
 
-Kanban board available [here](https://github.com/users/jpgenari/projects/9/views/1).
+Wireframes for primary pages drafted with [Balsamic](https://balsamiq.com/). Below a list of wireframes and pages with their respective screenshots.
+
+**PAGE**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------
+landing page|the landing page or homepage displays header and footer which will be always visible with the main content in the middle changing, ensuring header will be always visible for easy navigation|![colour-pallete](/documentation/wireframes/wireframe-home.png)
+
+### Colors
+
+The website’s color palette follows a minimalist approach, featuring only three main colors: white, red, and green. These colors are chosen for their high contrast, which enhances accessibility and maintains simplicity. Additionally, the red and green reflect the colors of strawberries, the main berry sold on the site. The palette, created using [Coolors](https://coolors.co/), ensures a cohesive and visually appealing design that supports the overall user experience.
+  
+  ![colour-pallete](/documentation/wexford-berries-colours.png)
+
+## FEATURES
+
+### Header and Footer
+
+Header and page should be visible in every page, being also responsive on mobile.
+
+#### Header
+
+The first block at the top and displays the shop logo at the left, a searching box and menu options with 'Products', 'About Us' and 'Contact' which lead to the specific options at the middle and 'My Account' and shopping bag at the right side. If the user is logged in, within the menu options user will also see 'Wishlist' that leads to the products wishlist page. Below mains header content, there is an engaging message offering free delivery upon a spending threshold.
+
+This block is always visible, fixed at the top working as the navigating menu for the entire application. For admin users, there will be another menu option for store management, where store owner can add / remove products in sale and also edit current products.
+
+#### Footer
+
+The third block is at the bottom of page, fixed there. It contains three main rows, with the first one holding the subscribe to the newsletter section. The second is split into three columns displaying the shop name and message, useful links where users and shoppers can find links to 'Home' page, 'Products' page, 'Contact' page, 'About Us' page and 'Privacy Policy' page, and contact information with shop address, email and social. The third one displays the copyright section.
+
+**SECTION**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+Header|anonymous|not logged in user|![header-anonymous](/documentation/features/header_annonymous.png)
+Header|logged in|'My Account' as a shopper|![header-shopper](/documentation/features/header_shopper.png)
+Header|logged in|'My Account' as store owner|![header-store-owner](/documentation/features/header_store_owner.png)
+Footer|anonymous or logged in||![footer](/documentation/features/footer.png)
+
+### Landing page
+
+The landing page displays header at the top and footer at the bottom with the content in section in between them. In this case, the content section displays an image with multiple berry fruits to capture users' attention. Above the image, it is displayed an engaging message and a prominently 'Shop Now' button, easily accessible leading users to the products page.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+home|all users|landing page view on first access|![landing-page](/documentation/features/home.png)
+
+### Products
+
+The products page display all available products with simplicity and clean design. Each product should have an engaging image, name, price and rating. This page should have different viewing depending on users' status - either as a shopper or store owner. It also displays a shortcut button to bring users back to the top after scrolling down at the bottom left, making it easier return to the top of the page.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+products|all users|viewing products page as a shopper|![products-shopper](/documentation/features/products_shopper.png)
+products|store owner|viewing products page as store owner, with the buttons to either edit or delete products|![products-store-owner](/documentation/features/products_store_owner.png)
+
+#### Product Details
+
+Upon clicking on specific product, user is direct to the product details page. In this page the product will display a larger image, product name, price, rating, description, and option to add a quantity of the product to the shopping bag. Depending on the user status, where shoppers have the option to add product to their wishlist, while store owners also have the buttons to edit or delete product as well.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+Product details|shopper|viewing product details page as a shopper|![product-details-shopper](/documentation/features/product_details_shopper.png)
+Product details|store owner|viewing product details page as store owner, where it displays the buttons to either edit or delete products|![product-details-store-owner](/documentation/features/product_details_store_owner.png)
+
+#### Product Management
+
+Available for store owner (or user admins) only, in this page products can be added to the shop including product name, price, rating, description and image. This complements the store management alongside buttons edit and delete previously mentioned, when clicking on edit button, store owner is lead to this page.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+product/add|store owner|add product to the shop|![product-management-add](/documentation/features/product_management.png)
+product/edit|store owner|edit product currently in the shop|![product-management-add](/documentation/features/product_management_edit.png)
+
+### Bag
+
+This page allows shoppers to view all products in their shopping bag before completing a purchase. When the product is added to their shopping bag, from product details page, an alert banner will be displayed indicating item has been added and shoppers can go straight away to the bag page. Once in the bag page, users can view items, update quantities or remove them entirely before going to secure checkout.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+product/details|shoppers (logged in or not)|when product is added to the bag, an alert message pops-up|![product-details-bag](/documentation/features/product_details_bag.png)
+Bag|shoppers (logged in or not)|where shopper can view details of their shopping bag|![bag](/documentation/features/bag.png)
+
+### Checkout
+
+The checkout page allows shoppers to fill out their details, delivery and payment info. The payment is securely processed by Stripe API. After the checkout is complete, shopper will directed to a confirmation page with order details and a confirmation email is sent to the order email. If the shopper is not logged in, they order details will not be saved to any profile.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+checkout|shoppers (logged in or not)|where shoppers fill out details|![checkout](/documentation/features/checkout.png)
+checkout_success|shoppers (logged in or not)|order confirmation details|![order-confirmation](/documentation/features/order_confirmation.png)
+email inbox|shoppers (logged in or not)|received confirmation email|![confirmation-email](/documentation/features/confirmation_email.png)
+
+### Account
+
+Django AllAuth provides Wexford Berries with a powerful and flexible authentication system that guarantees user data security. When customers register for an account, they enter their username, email, and password (confirmed by re-entering). Upon form submission, users receive an email to verify their address, allowing them to then sign in to Wexford Berries. Upon creating an account, shoppers can have a profile where they can have access to **Wishlist** where they can see all items added to wish list for later purchases and **Profile** where they find all past purchases as well as keep their delivery info up to date.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+signup|not logged in user|sign up page where users fill in their details|![sign-up](/documentation/features/sign_up.png)
+signin|not logged in user|sign in page where users fill in username/email and password, they also have the option to recover password in case this is forgotten|![sign-in](/documentation/features/sign-in.png)
+
+#### My Profile
+
+In the profile page the shoppers can view their delivery details and update them and also view all past orders. Upon clicking on an order, they user can view order details.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+profile|logged in shopper|view delivery default details and past orders|![profile](/documentation/features/profile.png)
+profile/order_history|logged in shopper|view past order details|![order-history](/documentation/features/order_history.png)
+
+#### Wishlist
+
+Logged in shoppers should have access to the wishlist page, where they an view all products added to their wishlist. In this page shoppers can view quantity of item in their wishlist and each product displayed following same layout as products page.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+wishlist|logged in shopper|view products in wishlist for logged in shoppers|![wishlist-page](/documentation/features/wishlist.png)
+
+### Contact
+
+In the contact page, shoppers and general users can easily get in touch with the shop by filling required contact fields. Once the message is submitted the sender gets an instant confirmation page and also an email with received message content and confirming the team will contact soon. This feature aims to improve overall customer satisfaction by facilitating feedback and problem solving.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+contact|all users|where all users and customer can easily get in touch with store|![contact](/documentation/features/contact.png)
+contact/success|all users|confirms message has been received|![contact](/documentation/features/contact_message_received.png)
+email inbox|all users|confirmation email sent to sender|![contact](/documentation/features/email_message_received.png)
+
+### About Us
+
+In the about us section the shop can communicate directly with their customers, letting they more about the shop and products. This page has an option to for store owners to quickly edit if needed. The edit page uses [Tiny Cloud](https://www.tiny.cloud/) editor to edit the about us text.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+about|all users|about page|![about](/documentation/features/about.png)
+about|shop owner|about page view for store owners|![about-store-owners](/documentation/features/about_store_owner.png)
+about/edit|shop owner|about edit page|![about-store-owners-editor](/documentation/features/about_editor.png)
 
 [Back to top](#wexford--berries "Back to top")
+
+### Privacy Policy
+
+The privacy policy page displays the shop privacy policy for users to check it.
+
+**PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
+----------|----------|----------|----------
+policies/privacy|all users|privacy policy page|![privacy-policy](/documentation/features/privaxy.png)
 
 ## ENTITY RELATIONSHIP DIAGRAM
 
@@ -201,7 +327,7 @@ The Entity Relationship Diagram (ERD) for the Django project's created apps was 
 
 [Back to top](#katask--manager "Back to top")
 
-## Marketing Strategies for Wexford Berries
+## MARKETING STRATEGIES FOR WEXFORD BERRIES
 
 ### Overview
 Wexford Berries aims to connect directly with consumers who value fresh, high-quality berries. To achieve this, our marketing strategy focuses on building a strong online presence, engaging with our target audience through various digital channels, and leveraging the power of social media.
@@ -245,9 +371,11 @@ Using integration with [Mailchimp](https://mailchimp.com/?currency=EUR).
 
 [Back to top](#wexford--berries "Back to top")
 
-## Validating and Testing
+## VALIDATING AND TESTING
 
-### HTML - W3C Validator
+### Validator Testing
+
+#### HTML - W3C Validator
 
 No errors flagged when testing on [W3C](https://validator.w3.org/nu/) with option checking by address, only few warnings flagged. Screenshots below displaying code from each file tested:
 
@@ -275,7 +403,7 @@ Order Details|![W3C validation screenshot order details page](/documentation/w3c
 
 [Back to top](#wexford--berries "Back to top")
 
-### CSS - Jigsaw W3C Validator
+#### CSS - Jigsaw W3C Validator
 
 No errors flagged when testing on [Jigsaw W3C](https://jigsaw.w3.org/css-validator/) by direct input, only warnings - mostly 'vendor extension'. Screenshots below displaying code from each file tested:
 
@@ -287,7 +415,7 @@ No errors flagged when testing on [Jigsaw W3C](https://jigsaw.w3.org/css-validat
 
 [Back to top](#wexford--berries "Back to top")
 
-### JavaScript - JS Hint
+#### JavaScript - JS Hint
 
 No errors flagged when testing on [JS Hint](https://jshint.com/), only warnings flagged. Screenshots below displaying code from each file tested:
 
@@ -306,7 +434,7 @@ No errors flagged when testing on [JS Hint](https://jshint.com/), only warnings 
 
 [Back to top](#wexford--berries "Back to top")
 
-### Python and Django - CI Python Linter
+#### Python and Django - CI Python Linter
 
 No errors flagged when testing on [CI Python Linter](https://pep8ci.herokuapp.com/). Screenshots below displaying code from each file tested:
 
@@ -354,7 +482,7 @@ wishlist|[views.py](https://github.com/jpgenari/wexford_berries/blob/main/wishli
 
 [Back to top](#wexford--berries "Back to top")
 
-### Performance - Google Lighthouse
+#### Performance - Google Lighthouse
 
 No performance issues flagged when running Google Chrome Lighthouse, only warnings. Screenshots below displaying code from each file tested:
 
@@ -400,7 +528,13 @@ About page|store owner|update 'About Us' page from when logged in as admin|pass
 
 [Back to top](#wexford--berries "Back to top")
 
-## Deployment
+## DEPLOYMENT AND DEPLOYMENT
+
+### Agile Development
+
+Agile methodology applied considering available time to build project, where many features such as Reviews haven't been implemented yet. Users stories can be found in the Kanban board.
+
+Kanban board available [here](https://github.com/users/jpgenari/projects/9/views/1).
 
 ### ElephantSQL Database
 
@@ -421,6 +555,7 @@ This project utilizes  [AWS](https://aws.amazon.com) for storing media and stati
 After creating an AWS account and logging in, navigate to the AWS Management Console page and follow these steps to connect your project.
 
 #### S3 Bucket
+
 - Find and select S3.
 - Create a new bucket, providing a name typically matching your Heroku app name, and select the region closest to you.
 - Disable "Block all public access" and acknowledge that the bucket will be public, as it's required for Heroku operation.
@@ -475,6 +610,7 @@ After creating an AWS account and logging in, navigate to the AWS Management Con
 ```
 Before you click "Save", add /* to the end of the Resource key in the Bucket Policy Editor (as shown above).
 - Click Save.
+
 #### IAM
 
 - Navigate to IAM by searching for it on the AWS Services Menu. Once on the IAM page, proceed with the following steps:
@@ -652,7 +788,8 @@ You will now have a forked version of the repository in your GitHub account.
 
 [Back to top](#wexford--berries "Back to top")
 
-## Tecnologies Used
+## TECHNOLOGIES
+
 ### Languages
 
 - HTML
@@ -662,17 +799,20 @@ You will now have a forked version of the repository in your GitHub account.
 
 ### Frameworks and Libraries
 
-- Django
-- Bootstrap
-- jQuery
-- Stripe
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
+- [Stripe](https://stripe.com/ie)
+- [Tiny Cloud](https://www.tiny.cloud/)
 
 ### Development and Deploy
 
-- Heroku
-- Git
-- GitHub
-- VsCode
+- [Heroku](https://www.heroku.com/home)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [VsCode](https://code.visualstudio.com/)
+
+[Back to top](#wexford--berries "Back to top")
 
 ## CREDITS
 
