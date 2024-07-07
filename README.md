@@ -100,9 +100,13 @@ Wexford Berries operates under a B2C (business-to-consumer) e-commerce model, of
 
 These features collectively enhance the shopping experience, making Wexford Berries a convenient and reliable platform for consumers. Additionally, the shop offers a variety of berry fruits online, including some sourced directly from Wexford, Ireland, which inspired the shop’s name.
 
+[Back to top](#wexford--berries "Back to top")
+
 ### UI - User Interface
 
 The user interface is designed to be extremely simple and distraction-free, utilizing colors that evoke the essence of berry fruits. This color scheme not only creates a visually appealing experience but also stimulates shoppers to engage more deeply with the shop. The intuitive layout ensures that customers can easily navigate the site, find products, and complete their purchases effortlessly.
+
+[Back to top](#wexford--berries "Back to top")
 
 ### User Stories
 
@@ -178,13 +182,26 @@ Wireframes for primary pages drafted with [Balsamic](https://balsamiq.com/). Bel
 
 **PAGE**|**DETAILS**|**SCREENSHOT**
 ----------|----------|----------
-landing page|the landing page or homepage displays header and footer which will be always visible with the main content in the middle changing, ensuring header will be always visible for easy navigation|![colour-pallete](/documentation/wireframes/wireframe-home.png)
+landing|the landing page or homepage will display header and footer which will be always visible with the main content in the middle changing, ensuring header will be always visible for easy navigation|![landing-page-wireframe](/documentation/wireframes/wireframe_landing.png)
+products|products page will display all products available in the shop, store owner will also have edit buttons|![products-page-wireframe](/documentation/wireframes/wireframe_products.png)
+product details|the product details page will display details of selected product, store owner will also have edit buttons|![product-details-page-wireframe](/documentation/wireframes/wireframe_product_details.png)
+bag|the shopping bag page will display all products in the shopping so shoppers can view all items selected before checkout|![bag-page-wireframe](/documentation/wireframes/wireframe_shopping_bag.png)
+checkout|in the checkout page shoppers can enter their details, delivery details and payment details to be passed to Stripe and complete purchase, also, an order summary will be available to check what's about to be purchased|![checkout-page-wireframe](/documentation/wireframes/wireframe_checkout.png)
+product management|the product management page is available to store owners (admin) only, here they can add new products to the shop, adding details and image|![product-management-page-wireframe](/documentation/wireframes/wireframe_produc_management.png)
+wishlist|the wishlist page will display all products shoppers have added to their wishlist for later purchase|![wishlist-page-wireframe](/documentation/wireframes/wireframe_wishlist.png)
+profile|in the profile page shoppers will be able to view their delivery details and update them if needed, also, they will have available an order history|![profile-page-wireframe](/documentation/wireframes/wireframe_profile.png)
+about|the about page will allow shop to display a message about the shop itself as a way to communicate with their customers, store owner (admin) will also have an edit button to edit this section|![about-page-wireframe](/documentation/wireframes/wireframe_about.png)
+contact|in the contact page all users should be able to send a direct message to the shop|![contact-page-wireframe](/documentation/wireframes/wireframe_contact.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Colors
 
 The website’s color palette follows a minimalist approach, featuring only three main colors: white, red, and green. These colors are chosen for their high contrast, which enhances accessibility and maintains simplicity. Additionally, the red and green reflect the colors of strawberries, the main berry sold on the site. The palette, created using [Coolors](https://coolors.co/), ensures a cohesive and visually appealing design that supports the overall user experience.
   
   ![colour-pallete](/documentation/wexford-berries-colours.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ## FEATURES
 
@@ -209,6 +226,8 @@ Header|logged in|'My Account' as a shopper|![header-shopper](/documentation/feat
 Header|logged in|'My Account' as store owner|![header-store-owner](/documentation/features/header_store_owner.png)
 Footer|anonymous or logged in||![footer](/documentation/features/footer.png)
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Landing page
 
 The landing page displays header at the top and footer at the bottom with the content in section in between them. In this case, the content section displays an image with multiple berry fruits to capture users' attention. Above the image, it is displayed an engaging message and a prominently 'Shop Now' button, easily accessible leading users to the products page.
@@ -216,6 +235,8 @@ The landing page displays header at the top and footer at the bottom with the co
 **PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
 ----------|----------|----------|----------
 home|all users|landing page view on first access|![landing-page](/documentation/features/home.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Products
 
@@ -244,6 +265,8 @@ Available for store owner (or user admins) only, in this page products can be ad
 product/add|store owner|add product to the shop|![product-management-add](/documentation/features/product_management.png)
 product/edit|store owner|edit product currently in the shop|![product-management-add](/documentation/features/product_management_edit.png)
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Bag
 
 This page allows shoppers to view all products in their shopping bag before completing a purchase. When the product is added to their shopping bag, from product details page, an alert banner will be displayed indicating item has been added and shoppers can go straight away to the bag page. Once in the bag page, users can view items, update quantities or remove them entirely before going to secure checkout.
@@ -252,6 +275,8 @@ This page allows shoppers to view all products in their shopping bag before comp
 ----------|----------|----------|----------
 product/details|shoppers (logged in or not)|when product is added to the bag, an alert message pops-up|![product-details-bag](/documentation/features/product_details_bag.png)
 Bag|shoppers (logged in or not)|where shopper can view details of their shopping bag|![bag](/documentation/features/bag.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Checkout
 
@@ -262,6 +287,8 @@ The checkout page allows shoppers to fill out their details, delivery and paymen
 checkout|shoppers (logged in or not)|where shoppers fill out details|![checkout](/documentation/features/checkout.png)
 checkout_success|shoppers (logged in or not)|order confirmation details|![order-confirmation](/documentation/features/order_confirmation.png)
 email inbox|shoppers (logged in or not)|received confirmation email|![confirmation-email](/documentation/features/confirmation_email.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Account
 
@@ -289,6 +316,8 @@ Logged in shoppers should have access to the wishlist page, where they an view a
 ----------|----------|----------|----------
 wishlist|logged in shopper|view products in wishlist for logged in shoppers|![wishlist-page](/documentation/features/wishlist.png)
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Contact
 
 In the contact page, shoppers and general users can easily get in touch with the shop by filling required contact fields. Once the message is submitted the sender gets an instant confirmation page and also an email with received message content and confirming the team will contact soon. This feature aims to improve overall customer satisfaction by facilitating feedback and problem solving.
@@ -298,6 +327,8 @@ In the contact page, shoppers and general users can easily get in touch with the
 contact|all users|where all users and customer can easily get in touch with store|![contact](/documentation/features/contact.png)
 contact/success|all users|confirms message has been received|![contact](/documentation/features/contact_message_received.png)
 email inbox|all users|confirmation email sent to sender|![contact](/documentation/features/email_message_received.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### About Us
 
@@ -319,6 +350,8 @@ The privacy policy page displays the shop privacy policy for users to check it.
 ----------|----------|----------|----------
 policies/privacy|all users|privacy policy page|![privacy-policy](/documentation/features/privaxy.png)
 
+[Back to top](#wexford--berries "Back to top")
+
 ## ENTITY RELATIONSHIP DIAGRAM
 
 The Entity Relationship Diagram (ERD) for the Django project's created apps was generated using Graphviz. This visualization specifically represents the relationships and entities within the defined apps, providing a comprehensive overview of the data structure in the project.
@@ -331,6 +364,8 @@ The Entity Relationship Diagram (ERD) for the Django project's created apps was 
 
 ### Overview
 Wexford Berries aims to connect directly with consumers who value fresh, high-quality berries. To achieve this, our marketing strategy focuses on building a strong online presence, engaging with our target audience through various digital channels, and leveraging the power of social media.
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Key Marketing Strategies
 
@@ -349,16 +384,22 @@ Wexford Berries aims to connect directly with consumers who value fresh, high-qu
   5. **Influencer Partnerships (Future Strategy):**
     - Plan to collaborate with food bloggers, health influencers, and chefs to create sponsored content that showcases the versatility and quality of Wexford Berries. These partnerships can include recipe creations, unboxing videos, and social media takeovers.
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Meta Tags for SEO
 ```html
   <meta name="keywords" content="berries, strawberry, blueberry, blackberry, fresh fruits, wexford, healthy food, farmed in ireland, desserts, baking at home">
   ```
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Facebook Page
 
 [Wexford Berries Page](https://www.facebook.com/people/Wexford-Berries/61560089931918/)
 
 ![Facebook Page](/documentation/facebook.png)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Newsletter
 Using integration with [Mailchimp](https://mailchimp.com/?currency=EUR).
@@ -493,6 +534,8 @@ Home|Mobile|![Lighthouse validation screenshot home page on mobile](/documentati
 Products|Desktop|![Lighthouse validation screenshot products page on desktop](/documentation/performance_lighthouse/products_desktop.png)
 Products|Mobile|![Lighthouse validation screenshot home products on mobile](/documentation/performance_lighthouse/products_mobile.png)
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Manual Testing
 
 Manual testing following user stories and fully reproducing site user and site admin journey throughout application use. Tests carried over on Google Chrome, Mozilla Firefox, Safari on MacOS system, and mobile testing carried over throughout Google Chrome inspect tool.
@@ -536,6 +579,8 @@ Agile methodology applied considering available time to build project, where man
 
 Kanban board available [here](https://github.com/users/jpgenari/projects/9/views/1).
 
+[Back to top](#wexford--berries "Back to top")
+
 ### ElephantSQL Database
 
 This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
@@ -548,6 +593,8 @@ Specify a name for your database (typically the project name, such as "wexford-b
 - You can opt to leave the Tags field empty.
 - Select the nearest Region and Data Center.
 - After creation, access your database by clicking on its name, where you'll find the database URL and Password.
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Amazon AWS
 This project utilizes  [AWS](https://aws.amazon.com) for storing media and static files online, as Heroku does not retain this data type.
@@ -664,6 +711,8 @@ Before you click "Save", add /* to the end of the Resource key in the Bucket Pol
 - Under Manage Public Permissions, select Grant public read access to this object(s)
 - No further settings are required, so click Upload.
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Stripe API
 
 This project utilizes [Stripe](https://stripe.com) to handle the ecommerce payments.
@@ -682,6 +731,8 @@ As a backup in case users close the purchase-order page during payment, Stripe W
 - Click Add Endpoint to complete the process.
 - You'll receive a new key:
    -STRIPE_WH_SECRET = Signing Secret (Webhook) Key (starts with wh)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Gmail API
 This project utilizes [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
@@ -703,8 +754,9 @@ Go to the Accounts and Import tab.
   - EMAIL_HOST_PASS = user's 16-character API key
   - EMAIL_HOST_USER = user's personal Gmail email address
 
-### Heroku
+[Back to top](#wexford--berries "Back to top")
 
+### Heroku
 
 This project utilizes [Heroku](https://www.heroku.com), a platform as a service (PaaS) that empowers developers to build, run, and manage applications entirely in the cloud.
 Follow these deployment steps after setting up your account:
@@ -760,6 +812,8 @@ Or:
 
 Your project is now successfully connected and deployed on Heroku!
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Cloning Project
 
 A local clone of this repository can be made on GitHub. Please follow the below steps:
@@ -775,6 +829,8 @@ A local clone of this repository can be made on GitHub. Please follow the below 
 - Use the **pip3 install -r requirements.txt** command to install the dependencies and libraries needed for Wexford Berries.
 - Set up your env.py file and gather the PostgreSQL URL from ElephantSQL, if applicable, and add your SECRET_KEY and STRIPE/AWS keys if using these services.
 - Ensure that your env.py file is placed in your .gitignore file and follow the remaining steps in the Django Project Setup section before pushing your code to GitHub.
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Forking Project
 
@@ -797,6 +853,8 @@ You will now have a forked version of the repository in your GitHub account.
 - JavaScript
 - Python
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Frameworks and Libraries
 
 - [Django](https://www.djangoproject.com/)
@@ -804,6 +862,8 @@ You will now have a forked version of the repository in your GitHub account.
 - [jQuery](https://jquery.com/)
 - [Stripe](https://stripe.com/ie)
 - [Tiny Cloud](https://www.tiny.cloud/)
+
+[Back to top](#wexford--berries "Back to top")
 
 ### Development and Deploy
 
@@ -825,9 +885,11 @@ You will now have a forked version of the repository in your GitHub account.
   - All eCommerce photos and part of content generated by [Microsoft CoPilot](https://copilot.microsoft.com/).
   - Privacy policy generated by [TermsFeed](https://app.termsfeed.com/).
 
+[Back to top](#wexford--berries "Back to top")
+
 ### Acknowledgement
 
- - A special thanks to my cohort, Amy Richardson, for her outstanding support and patience. Support for not keep pushing me and patience when I was complaining at 23:30 or even later.
+ - A special thanks to my cohort, Amy Richardson, and to my mentor Chris Quinn for their outstanding support and patience. When they kept pushing me and not letting me give up.
 
  - A big thank you to Bruna Andelieri a friend I made throughout this corse and has been helping immensely - and extend my gratitude to her partner Ivan, how also help me.
 
