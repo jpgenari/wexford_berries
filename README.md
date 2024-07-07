@@ -15,7 +15,7 @@ Please note that payments made using valid debit/credit cards will not be proces
 ## Table of contents
 
 + [UX - USER EXPERIENCE](#ux---user-experience "UX - USER EXPERIENCE")
-  + [e-Commerce Business Model](#e---ommerce-business-model "e-Commerce Business Model")
+  + [e-Commerce Business Model](#e---commerce-business-model "e-Commerce Business Model")
   + [UI - User Interface](#ui---user-interface "UI - User Interface")
   + [User Stories](#user-stories "User Stories")
     - [Viewing and Navigation](#viewing-and-navigation "Viewing and Navigation")
@@ -112,7 +112,7 @@ The user interface is designed to be extremely simple and distraction-free, util
 
 #### Viewing and Navigation
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 shopper|view a list of products|I can select items to purchase
 shopper|view product details|identify price, description, product rating and product image
@@ -120,7 +120,7 @@ shopper|easily view the total of my purchases at any time|avoid spending too muc
 
 #### Registration and User Accounts
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 site user|easily register for an account|have a personal account and be able to view my profile
 site user|easily login or logout|access my personal account information
@@ -130,7 +130,7 @@ site user|have a personalized user profile|view my personal order history and or
 
 #### Sorting and Searching
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 shopper|sort the list of available products|easily identify the best rated and best priced products
 shopper|search for a product by name or description|find a specific product l'd like to purchase
@@ -138,7 +138,7 @@ shopper|easily see what I've searched for and the number of results|quickly deci
 
 #### Purchasing and Checkout
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 shopper|easily select quantity of a product when purchasing it|ensure I don't accidentally select the wrong product or its quantity
 shopper|easily edit quantity of a product when purchasing it|add or remove number of products in my shopping bag
@@ -150,7 +150,7 @@ shopper|receive an email confirmation after checking out|keep the confirmation o
 
 #### Admin and Store Management
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 store owner|add a product|add new items to my store
 store owner|edit/update a product|change product prices, descriptions, images, and other product criteria
@@ -158,19 +158,19 @@ store owner|delete a product|remove items that are no longer for sale
 
 #### Wishlist
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 shopper|easily have access to a wish list|add, remove and view items in my wish list for future purchases
 
 #### Contact us
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 shopper|easily send an email to the store|contact them if I have any questions about an order, product and delivery
 
 #### About
 
-**AS A**|**I CAN**|**SO THAT**
+**AS**|**I CAN**|**SO THAT**
 ----------|----------|----------
 store owner|easily update the about us page|I can update about page when needed
 
@@ -222,7 +222,7 @@ The third block is at the bottom of page, fixed there. It contains three main ro
 **SECTION**|**USER**|**DETAILS**|**SCREENSHOT**
 ----------|----------|----------|----------
 Header|anonymous|not logged in user|![header-anonymous](/documentation/features/header_annonymous.png)
-Header|logged in|'My Account' as a shopper|![header-shopper](/documentation/features/header_shopper.png)
+Header|logged in|'My Account' as shopper|![header-shopper](/documentation/features/header_shopper.png)
 Header|logged in|'My Account' as store owner|![header-store-owner](/documentation/features/header_store_owner.png)
 Footer|anonymous or logged in||![footer](/documentation/features/footer.png)
 
@@ -240,11 +240,11 @@ home|all users|landing page view on first access|![landing-page](/documentation/
 
 ### Products
 
-The products page display all available products with simplicity and clean design. Each product should have an engaging image, name, price and rating. This page should have different viewing depending on users' status - either as a shopper or store owner. It also displays a shortcut button to bring users back to the top after scrolling down at the bottom left, making it easier return to the top of the page.
+The products page display all available products with simplicity and clean design. Each product should have an engaging image, name, price and rating. This page should have different viewing depending on users' status - either as shopper or store owner. It also displays a shortcut button to bring users back to the top after scrolling down at the bottom left, making it easier return to the top of the page.
 
 **PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
 ----------|----------|----------|----------
-products|all users|viewing products page as a shopper|![products-shopper](/documentation/features/products_shopper.png)
+products|all users|viewing products page as shopper|![products-shopper](/documentation/features/products_shopper.png)
 products|store owner|viewing products page as store owner, with the buttons to either edit or delete products|![products-store-owner](/documentation/features/products_store_owner.png)
 
 #### Product Details
@@ -253,7 +253,7 @@ Upon clicking on specific product, user is direct to the product details page. I
 
 **PAGE**|**USER**|**DETAILS**|**SCREENSHOT**
 ----------|----------|----------|----------
-Product details|shopper|viewing product details page as a shopper|![product-details-shopper](/documentation/features/product_details_shopper.png)
+Product details|shopper|viewing product details page as shopper|![product-details-shopper](/documentation/features/product_details_shopper.png)
 Product details|store owner|viewing product details page as store owner, where it displays the buttons to either edit or delete products|![product-details-store-owner](/documentation/features/product_details_store_owner.png)
 
 #### Product Management
@@ -853,8 +853,6 @@ You will now have a forked version of the repository in your GitHub account.
 - JavaScript
 - Python
 
-[Back to top](#wexford--berries "Back to top")
-
 ### Frameworks and Libraries
 
 - [Django](https://www.djangoproject.com/)
@@ -862,8 +860,6 @@ You will now have a forked version of the repository in your GitHub account.
 - [jQuery](https://jquery.com/)
 - [Stripe](https://stripe.com/ie)
 - [Tiny Cloud](https://www.tiny.cloud/)
-
-[Back to top](#wexford--berries "Back to top")
 
 ### Development and Deploy
 
@@ -884,8 +880,6 @@ You will now have a forked version of the repository in your GitHub account.
   - Debugging and refactoring performed with support of [ChatGPT](https://chat.openai.com/).
   - All eCommerce photos and part of content generated by [Microsoft CoPilot](https://copilot.microsoft.com/).
   - Privacy policy generated by [TermsFeed](https://app.termsfeed.com/).
-
-[Back to top](#wexford--berries "Back to top")
 
 ### Acknowledgement
 
