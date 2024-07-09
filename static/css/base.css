@@ -26,7 +26,6 @@ footer .container {
 
 .logo-font {
     text-transform: uppercase;
-    /* font-weight: bold; */
 }
 
 .main-logo-link {
@@ -242,7 +241,7 @@ footer p {
 }
 
 #mc_embed_signup #mce-success-response {
-    color: white
+    color: white !important;
 }
 
 .custom-margin-bottom {
