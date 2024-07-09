@@ -60,7 +60,6 @@ Please note that payments made using valid debit/credit cards will not be proces
   + [Validator Testing](#validator-testing "Validator Testing")
     - [HTML - W3C Validator](#html---w3c-validator "HTML - W3C Validator")
     - [CSS - Jigsaw W3C Validator](#css---jigsaw-w3c-validator "CSS - Jigsaw W3C Validator")
-    - [JavaScript - JS Hint](#javascript---js-hint "JavaScript - JS Hint")
     - [Python and Django - CI Python Linter](#python-and-django---ci-python-linter "Python and Django - CI Python Linter")
     - [Performance - Google Lighthouse](#performance---google-lighthouse "Performance - Google Lighthouse")
   + [Manual Testing](#manual-testing "Manual Testing")
@@ -453,25 +452,6 @@ No errors flagged when testing on [Jigsaw W3C](https://jigsaw.w3.org/css-validat
 [/.../checkout.css](https://github.com/jpgenari/wexford_berries/blob/main/checkout/static/checkout/css/checkout.css)|![jigsaw css validation screenshot checkout.css](/documentation/w3c_css/css-checkout.png)
 [/.../profiles.css](https://github.com/jpgenari/wexford_berries/blob/main/profiles/static/profiles/css/profile.css)|![jigsaw css validation screenshot profiles.css](/documentation/w3c_css/css-profiles.png)
 [/.../base.css](https://github.com/jpgenari/wexford_berries/blob/main/static/css/base.css)|![jigsaw css validation screenshot base.css](/documentation/w3c_css/css-base.png)
-
-[Back to top](#wexford--berries "Back to top")
-
-#### JavaScript - JS Hint
-
-No errors flagged when testing on [JS Hint](https://jshint.com/), only warnings flagged. Screenshots below displaying code from each file tested:
-
-**FILE**|**SCREENSHOT**
-----------|----------
-[/.../add_product.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/add_product.html)|![JS Hint validation screenshot add_product.html](/documentation/jshint/edit_add_product.html.png)
-[/.../bag.html](https://github.com/jpgenari/wexford_berries/blob/main/bag/templates/bag/bag.html)|![JS Hint validation screenshot bag.html](/documentation/jshint/bag.html.png)
-[/.../base.html](https://github.com/jpgenari/wexford_berries/blob/main/templates/base.html)|![JS Hint validation screenshot base.html](/documentation/jshint/base.html.png)
-[/.../checkout.html](https://github.com/jpgenari/wexford_berries/blob/main/checkout/templates/checkout/checkout.html)|![JS Hint validation screenshot checkout.html](/documentation/jshint/checkout.html.png)
-[/.../countryfield.js](https://github.com/jpgenari/wexford_berries/blob/main/profiles/static/profiles/js/countryfield.js)|![JS Hint validation screenshot countryfield.js](/documentation/jshint/profiles_countryfield.js.png)
-[/.../custom_quantity_imput_script.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/custom_widget_templates/custom_clearable_file_input.html)|![JS Hint validation screenshot custom_clearable_file_input.html](/documentation/jshint/products_quantity_imput_script.html.png)
-[/.../edit_product.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/edit_product.html)|![JS Hint validation screenshot edit_product.html](/documentation/jshint/edit_add_product.html.png)
-[/.../products.html](https://github.com/jpgenari/wexford_berries/blob/main/products/templates/products/products.html)|![JS Hint validation screenshot products.html](/documentation/jshint/products.html.png)
-[/.../stripe_elements.js](https://github.com/jpgenari/wexford_berries/blob/main/checkout/static/checkout/js/stripe_elements.js)|![JS Hint validation screenshot stripe_elements.js](/documentation/jshint/stripe_elements.js.png)
-[/.../wishlist.html](https://github.com/jpgenari/wexford_berries/blob/main/wishlist/templates/wishlist/wishlist.html)|![JS Hint validation screenshot wishlist.html](/documentation/jshint/wishlist.html.png)
 
 [Back to top](#wexford--berries "Back to top")
 
